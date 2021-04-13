@@ -26,7 +26,7 @@ medical_layout = [
                     html.Div(id = 'student-id',children = [
                         html.H6(
                             id = 'student-id-indicator',
-                            children = '请输入所要展示画像的学生学号: ',
+                            children = '请输入所要展示科室名称: ',
                             style = {'display': 'inline-block','margin-right':'10px','font-weight':'bold'}),
                         dcc.Input(id='input-student-id',
                             type='text',
@@ -41,17 +41,22 @@ medical_layout = [
                         # html.Div(id = 'student-info',style = {'padding-bottom':'10px'}),
                     ]),
 
-                    html.Img(src='../static/studentPic/14012.jpg'),
-                    html.Img(src='../static/studentPic/13968.jpg'),
+                    # html.Img(src='../static/studentPic/14012.jpg'),
+                    # html.Img(src='../static/studentPic/13968.jpg'),
+                    # html.A(href="https://www.baidu.com/",target="ifrPage"),
+
 
                     html.P("""
                         。。。前端待开发中
                     """,className = 'sj-p')
                         ],style = {'margin-left':'5%','margin-right':'5%','padding-bottom':'10%'},
+            ),
 
-
-            )
+            # 内嵌一个外链接展示
+            # html.Iframe(id="ifrPage", name="ifrPage", src="https://www.baidu.com/", className='sj-p',
+            #             height='100%',width='100%'),
         ])
-    ],className = 'text-container'), 
+    ],className = 'text-container'),
+
 ]
 
