@@ -1,2 +1,2 @@
 # gzu_data_visual
-一个可视化系统项目，excel取代SQL作为数据读取。
+一个基于flask、dash框架的数据可视化系统项目，excel取代SQL作为数据读取。
