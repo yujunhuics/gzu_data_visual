@@ -42,7 +42,7 @@ welcome_layout = [
 
                     html.P(children=[
                         '外部链接：',
-                        html.A(id='pre-url', children=['早期工作'], href='http://amueller.github.io/word_cloud/',
+                        html.A(id='pre-url', children=['早期工作'], href='../static/early.html',
                                target='_blank'),
                         # '的dash框架实现。图表中自带了很多基础的控件，可以对图表进行拖拽选择',
                         # '指定区域的大小缩放，鼠标悬停显示所处位置的数据点或数据块的具体信息，具体的特色功能详见一起提交的作品说明。',

@@ -22,8 +22,15 @@ FILE_NAME = {
     'consumptions': 'consumption.csv',  # 消费信息
     'consumption_predicts': 'consumption_predict.csv',  # 消费预测
     'rank_predicts': 'rank_predict.csv',  # 等地预测
-    'subjects_select': 'process_7_3.csv'  # 七选三信息
+    'subjects_select': 'process_7_3.csv',  # 七选三信息
+    'medical_data' : 'medical.xlsx'
 }
+
+def get_xlsx_data(filename):
+    file_path=STATIC_PATH+FILE_NAME[filename]
+    data=pd.read_excel(file_path)
+    return data
+
 
 
 # 使用pd.read_csv读取csv文件
